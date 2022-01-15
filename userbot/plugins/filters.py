@@ -75,6 +75,7 @@ async def filter_incoming_handler(event):  # sourcery no-metrics
                 ),
                 file=file_media,
                 link_preview=link_preview,
+                parse_mode="html",
             )
 
 
