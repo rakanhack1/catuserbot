@@ -44,7 +44,7 @@ async def startup_process():
     if check is not None:
         Catcheck.sucess = False
         return
-    await verifyLoggerGroup()
+    # await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
@@ -54,10 +54,10 @@ async def startup_process():
         \nIf you need assistance, head to https://t.me/catuserbot_support"
     )
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    await verifyLoggerGroup()
-    await add_bot_to_logger_group(BOTLOG_CHATID)
+    # await verifyLoggerGroup()
+    # await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
-        await add_bot_to_logger_group(PM_LOGGER_GROUP_ID)
+        # await add_bot_to_logger_group(PM_LOGGER_GROUP_ID)
     await startupmessage()
     Catcheck.sucess = True
     return
